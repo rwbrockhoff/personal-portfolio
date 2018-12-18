@@ -1,0 +1,16 @@
+@import '../../Main/variables';
+@import '../../Main/mixins';
+
+div.header-container {
+    width: 100%;
+    height: 80vh;
+    background: $accent-color;
+    @include center;
+    
+    h1 {
+        width: 80%;
+        font-size: 9em;
+        font-weight: 700;
+        color: white;
+    }
+}
