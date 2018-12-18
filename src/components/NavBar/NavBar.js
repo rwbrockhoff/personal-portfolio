@@ -1,13 +1,28 @@
-import React from 'react'
+import React, {Component} from 'react'
+import ReactDOM from 'react-dom'
 import './NavBar.scss'
+import '../../Main/animation'
 import logo from '../../assets/logo.png'
+import animation from '../../Main/animation';
 
-export default function Navbar() {
+export default class Navbar extends Component {
+  constructor(){
+    super()
+    this.dom = {}
+    this.logoRef = React.createRef()
+  }
+
+  componentDidMount(){
+    this.dom.root = ReactDOM.findDOMNode(this)
+    animation.show(this.dom.root)
+  }
+
+  render(){
   return (
     <nav>
 
       <div className="panel-one">
-      <img src={logo} alt="logo"/>
+      <img src={logo} alt="logo" ref={this.logoRef}/>
       </div>
 
       <div className="panel-two">
@@ -25,5 +40,5 @@ export default function Navbar() {
       </div>
 
     </nav>
-  )
+  )}
 }
