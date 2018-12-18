@@ -4,17 +4,21 @@ import './NavBar.scss'
 import '../../Main/animation'
 import logo from '../../assets/logo.png'
 import animation from '../../Main/animation';
+import { TimelineMax } from 'gsap'
 
 export default class Navbar extends Component {
   constructor(){
     super()
     this.dom = {}
-    this.logoRef = React.createRef()
+    this.logoRef = {}
   }
 
   componentDidMount(){
     this.dom.root = ReactDOM.findDOMNode(this)
-    animation.show(this.dom.root)
+    var tl = new TimelineMax()
+    tl.add( animation.show(this.dom.root) )
+    tl.add( animation.fadeIn(this.logoRef) )
+    
   }
 
   render(){
@@ -22,7 +26,7 @@ export default class Navbar extends Component {
     <nav>
 
       <div className="panel-one">
-      <img src={logo} alt="logo" ref={this.logoRef}/>
+      <img src={logo} alt="logo" ref={re => this.logoRef = re}/>
       </div>
 
       <div className="panel-two">
