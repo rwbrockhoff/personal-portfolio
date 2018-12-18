@@ -9,6 +9,12 @@
     flex-direction: column;
 }
 
+@mixin left-spread {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
 @mixin bold {
     font-weight: 700;
 }

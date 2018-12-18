@@ -2,23 +2,41 @@
 @import '../../Main/mixins';
 
 nav {
-    background: $off-white;
     height: 20vh;
+    padding: 1% 0%;
     display: grid;
     grid-template-columns: 25% 50% 25%;
 
     .panel-one {
         grid-column: 1;
         @include center;
+
+        img {
+            width: 80%;
+        }
     }
 
     .panel-two {
         grid-column: 2;
         @include center;
+        padding: 0% 10%;
+
+        p {
+            padding-bottom: 15px;
+            border-bottom: 1px solid pink;
+        }
     }
 
     .panel-three {
         grid-column: 3;
-        @include center-col;
+        @include center;
+        justify-content: flex-start;
+        padding-left: 20%;
+
+        ul {
+           height: 100%;
+           @include left-spread;
+           font-size: 0.8em;
+        }
     }
 }
