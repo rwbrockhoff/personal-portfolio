@@ -1,0 +1,9 @@
+@import '../../Main/variables';
+@import '../../Main/mixins';
+
+div.port-preview-container {
+    height: 100vh;
+    background: linear-gradient($accent-color, $accent-color-dark);
+    color: white;
+    @include center;
+}

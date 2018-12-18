@@ -1,0 +1,7 @@
+@import '../../Main/mixins';
+
+footer {
+    height: 10vh;
+    background: white;
+    @include center;
+}
