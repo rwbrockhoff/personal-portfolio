@@ -1,5 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700');
 @import './variables';
 
 body {
-    color: $theme-color;
+    font-family: 'PT Sans', sans-serif;
+}
+
+li {
+    list-style-type: none;
 }

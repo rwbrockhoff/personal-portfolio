@@ -1,0 +1,14 @@
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin center-col {
+    @include center;
+    flex-direction: column;
+}
+
+@mixin bold {
+    font-weight: 700;
+}

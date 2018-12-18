@@ -1,0 +1,24 @@
+@import '../../Main/variables';
+@import '../../Main/mixins';
+
+nav {
+    background: $off-white;
+    height: 20vh;
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+
+    .panel-one {
+        grid-column: 1;
+        @include center;
+    }
+
+    .panel-two {
+        grid-column: 2;
+        @include center;
+    }
+
+    .panel-three {
+        grid-column: 3;
+        @include center-col;
+    }
+}
