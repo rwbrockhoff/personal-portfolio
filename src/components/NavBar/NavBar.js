@@ -2,7 +2,6 @@ import React, {Component} from 'react'
 import './NavBar.scss'
 import logo from '../../assets/logo.png'
 
-
 export default class Navbar extends Component {
 
   render(){

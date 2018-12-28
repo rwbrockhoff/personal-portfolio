@@ -18,3 +18,10 @@
 @mixin bold {
     font-weight: 700;
 }
+
+@mixin open {
+    @keyframes open {
+        from { transform: scaleY(0); visibility: hidden; height: 0vh; opacity: 0; padding: 0vh 0vh;}
+        to{ transform: scaleY(1); visibility: visible; height: 20vh; opacity: 1; padding: 1vh 0vh;}
+    }
+}
