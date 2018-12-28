@@ -1,25 +1,9 @@
 import React, {Component} from 'react'
-import ReactDOM from 'react-dom'
 import './NavBar.scss'
-import '../../Main/animation'
 import logo from '../../assets/logo.png'
-import animation from '../../Main/animation';
-import { TimelineMax } from 'gsap'
+
 
 export default class Navbar extends Component {
-  constructor(){
-    super()
-    this.dom = {}
-    this.logoRef = {}
-  }
-
-  componentDidMount(){
-    this.dom.root = ReactDOM.findDOMNode(this)
-    var tl = new TimelineMax()
-    tl.add( animation.show(this.dom.root) )
-    tl.add( animation.fadeIn(this.logoRef) )
-    
-  }
 
   render(){
   return (
