@@ -7,12 +7,12 @@ import Footer from './components/Footer/Footer'
 class App extends Component {
   render() {
     return (
-      <React.Fragment>
+      <div className="container">
         <NavBar/>
         <Header/>
         <PortfolioPreview/>
         <Footer/>
-      </React.Fragment>
+      </div>
     );
   }
 }

@@ -8,7 +8,7 @@ nav {
     //Pre-Animation: Not Visible
     @include open;
     animation: open 250ms $custom-ease;
-    animation-delay: 250ms;
+    animation-delay: 400ms;
     animation-fill-mode: forwards;
     display: grid;
     grid-template-columns: 25% 50% 25%;

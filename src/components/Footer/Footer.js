@@ -4,7 +4,7 @@ import './Footer.scss'
 export default function Footer() {
   return (
     <footer>
-        Footer Information
+        © Interlake Studio. All rights reserved.
     </footer>
   )
 }
