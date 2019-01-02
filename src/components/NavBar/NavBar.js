@@ -1,11 +1,12 @@
 import React, {Component} from 'react'
 import './NavBar.scss'
 import { Link } from 'react-router-dom'
+import { withRouter } from 'react-router-dom';
 import logo from '../../assets/logo.png'
 import logoIcon from '../../assets/logo-icon.png'
 
 
-export default class Navbar extends Component {
+class Navbar extends Component {
   constructor(props){
     super(props)
     this.state = { menuOpen: false }
@@ -18,8 +19,10 @@ export default class Navbar extends Component {
   render(){
     const {menuOpen} = this.state
     const iconStyles = menuOpen ? 'fas fa-times side-menu-icon' : 'fas fa-bars side-menu-icon'
+    const isHomePage = this.props.history.location.pathname  === "/" ? '' : '0ms'
+  
   return (
-    <nav className="main-nav">
+    <nav className="main-nav" style={{animationDuration: isHomePage, animationDelay: isHomePage}}>
 
       <div className="panel-one">
       <Link to="/"><img src={logo} alt="logo" ref={re => this.logoRef = re}/></Link>
@@ -45,7 +48,7 @@ export default class Navbar extends Component {
       
       {menuOpen ? 
       <nav className="side-menu">
-         <Link to="/"><img src={logoIcon} className="sidebar-menu-icon"/></Link>
+         <Link to="/"><img src={logoIcon} alt="hamburger menu icon" className="sidebar-menu-icon"/></Link>
          <Link to="/about"> <li>About</li> </Link>
          <Link to="/contact"> <li>Contact</li> </Link>
          <Link to="/investment"> <li>Investment</li> </Link>
@@ -58,3 +61,4 @@ export default class Navbar extends Component {
     </nav>
   )}
 }
+export default withRouter(Navbar);

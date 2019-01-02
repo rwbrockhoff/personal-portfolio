@@ -13,10 +13,11 @@ nav.main-nav {
     display: grid;
     width: 100%;
     position: relative;
+    z-index: 2;
     grid-template-columns: 25% 50% 25%;
     
     @media all and (max-width: 575px) { 
-        grid-template-columns: 100%;
+        grid-template-columns: 80% 20%;
     }
 
     .panel-one {
@@ -60,6 +61,7 @@ nav.main-nav {
             display: flex;
             align-items: center;
             padding: 10% 0%;
+            
             }
 
             li:hover {
@@ -78,8 +80,7 @@ nav.main-nav {
             top: 40%;
             right: 15%;
             font-size: 2em;
-            color: gray;
-            
+            color: #e2e2e2;
         }
     }
 
