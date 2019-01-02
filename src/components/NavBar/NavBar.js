@@ -2,6 +2,7 @@ import React, {Component} from 'react'
 import './NavBar.scss'
 import { Link } from 'react-router-dom'
 import logo from '../../assets/logo.png'
+import logoIcon from '../../assets/logo-icon.png'
 
 
 export default class Navbar extends Component {
@@ -21,7 +22,7 @@ export default class Navbar extends Component {
     <nav className="main-nav">
 
       <div className="panel-one">
-      <img src={logo} alt="logo" ref={re => this.logoRef = re}/>
+      <Link to="/"><img src={logo} alt="logo" ref={re => this.logoRef = re}/></Link>
       </div>
 
       <div className="panel-two">
@@ -31,10 +32,10 @@ export default class Navbar extends Component {
 
       <div className="panel-three">
         <ul>
-          <li>About</li>
-          <li>Contact</li>
-          <li>Investment</li>
-          <li>Dribble</li>
+        <Link to="/about"> <li>About</li> </Link>
+         <Link to="/contact"> <li>Contact</li> </Link>
+         <Link to="/investment"> <li>Investment</li> </Link>
+         <Link to="/dribbble"><li><i className="fab fa-dribbble"/>  Dribbble</li> </Link>
         </ul>
       </div>
 
@@ -44,10 +45,11 @@ export default class Navbar extends Component {
       
       {menuOpen ? 
       <nav className="side-menu">
+         <Link to="/"><img src={logoIcon} className="sidebar-menu-icon"/></Link>
          <Link to="/about"> <li>About</li> </Link>
-         <li>Contact</li>
-         <li>Investment</li>
-         <li><i className="fab fa-dribbble"/> Dribble</li>
+         <Link to="/contact"> <li>Contact</li> </Link>
+         <Link to="/investment"> <li>Investment</li> </Link>
+         <Link to="/dribbble"><li><i className="fab fa-dribbble"/> Dribbble</li> </Link>
       </nav>
       :
       null

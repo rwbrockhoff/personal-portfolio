@@ -20,6 +20,7 @@ ReactDOM.render(
             <Route exact path="/about" component={About}/>
             <Route exact path="/contact" component={Contact}/>
             <Route exact path="/investment" component={Investment}/>
+            <Route path='/dribbble' component={() => { window.location = 'https://dribbble.com/'; return null;} }/>
         </Switch>
     </Router>
 
