@@ -14,6 +14,10 @@ nav {
     width: 100%;
     grid-template-columns: 25% 50% 25%;
 
+    @media all and (max-width: 575px) { 
+        grid-template-columns: 100%;
+    }
+
     .panel-one {
         grid-column: 1;
         @include center;
@@ -27,6 +31,7 @@ nav {
         grid-column: 2;
         @include center-col;
         padding: 0% 10%;
+        @media all and (max-width: 575px) { display: none; }
     }
 
     .panel-three {
@@ -34,7 +39,8 @@ nav {
         @include center;
         justify-content: flex-start;
         padding-left: 20%;
-
+        @media all and (max-width: 575px) { display: none; }
+        
         ul {
            height: 100%;
            @include left-spread;

@@ -2,8 +2,18 @@
 @import './variables';
 @import './mixins';
 
+@font-face {
+    font-family: 'Europa Bold';
+    src: local('Europa Bold'), url('../fonts/europa-bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Europa';
+    src: local('Europa'), url('../fonts/europa-regular.ttf') format('truetype');
+}
+
 body {
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'Europa', sans-serif;
 }
 
 li {
