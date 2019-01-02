@@ -1,12 +1,13 @@
 import React, {Component} from 'react'
 import './NavBar.scss'
+import { Link } from 'react-router-dom'
 import logo from '../../assets/logo.png'
 
 
 export default class Navbar extends Component {
   constructor(props){
     super(props)
-    this.state = {menuOpen: false}
+    this.state = { menuOpen: false }
   }
 
   toggleMenu = () => {
@@ -32,8 +33,8 @@ export default class Navbar extends Component {
         <ul>
           <li>About</li>
           <li>Contact</li>
+          <li>Investment</li>
           <li>Dribble</li>
-          <li>LinkedIn</li>
         </ul>
       </div>
 
@@ -43,10 +44,10 @@ export default class Navbar extends Component {
       
       {menuOpen ? 
       <nav className="side-menu">
-         <li>About</li>
+         <Link to="/about"> <li>About</li> </Link>
          <li>Contact</li>
-         <li>Dribble</li>
-         <li>LinkedIn</li>
+         <li>Investment</li>
+         <li><i className="fab fa-dribbble"/> Dribble</li>
       </nav>
       :
       null
