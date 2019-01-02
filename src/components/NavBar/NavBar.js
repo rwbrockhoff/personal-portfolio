@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import './NavBar.scss'
 import logo from '../../assets/logo.png'
-
+import menuIcon from '../../assets/menu.svg'
 
 export default class Navbar extends Component {
 
@@ -26,6 +26,10 @@ export default class Navbar extends Component {
           <li>LinkedIn</li>
         </ul>
       </div>
+
+      
+      <img src={menuIcon} className="side-menu" alt="hamburger menu"/>
+      
 
     </nav>
   )}

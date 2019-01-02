@@ -25,6 +25,9 @@ nav {
         img {
             width: 50%;
         }
+        @media all and (max-width: 575px) { 
+            margin-right: 10%;
+        }
     }
 
     .panel-two {
@@ -56,8 +59,18 @@ nav {
             li:hover {
                 border-bottom: 1px solid $accent-color;
             }
+        }    
     }
-           
+
+    .side-menu {
+        display: none;
+        @media all and (max-width: 575px) { 
+            display: flex;
+            position: absolute;
+            top: 40%;
+            right: 15%;
+            opacity: 0.4;
+        }
     }
 }
 

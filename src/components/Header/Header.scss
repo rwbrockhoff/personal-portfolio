@@ -10,11 +10,12 @@ div.header-container {
         width: 80%;
         font-size: 9vw;
         font-family: 'Europa Bold';
-        line-height: 150%;
+        line-height: 110%;
         color: black;
         flex-wrap: wrap;
         @media all and (max-width: 575px) { 
             font-size: 12vw;
+            line-height: 150%;
         }
     }
 }
