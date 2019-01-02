@@ -1,7 +1,7 @@
 @import '../../Main/variables';
 @import '../../Main/mixins';
 
-nav {
+nav.main-nav {
     //Pre-Animation: Not Visible
     opacity: 0;
     height: 0;
@@ -12,6 +12,7 @@ nav {
     animation-fill-mode: forwards;
     display: grid;
     width: 100%;
+    position: relative;
     grid-template-columns: 25% 50% 25%;
 
     @media all and (max-width: 575px) { 
@@ -62,15 +63,32 @@ nav {
         }    
     }
 
-    .side-menu {
+    .side-menu-icon {
         display: none;
+        
         @media all and (max-width: 575px) { 
             display: flex;
             position: absolute;
+            z-index: 3;
             top: 40%;
             right: 15%;
-            opacity: 0.4;
+            font-size: 2em;
+            color: gray;
+            
         }
+    }
+
+    nav.side-menu {
+        width: 100%;
+        height: 100vh;
+        background: black;
+        color: white;
+        position: fixed;
+        z-index: 2;
+        @include center-col;
+        font-size: 3em;
+        line-height: 150%;
+        
     }
 }
 

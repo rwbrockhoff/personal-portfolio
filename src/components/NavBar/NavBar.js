@@ -1,13 +1,23 @@
 import React, {Component} from 'react'
 import './NavBar.scss'
 import logo from '../../assets/logo.png'
-import menuIcon from '../../assets/menu.svg'
+
 
 export default class Navbar extends Component {
+  constructor(props){
+    super(props)
+    this.state = {menuOpen: false}
+  }
+
+  toggleMenu = () => {
+    this.setState({menuOpen: !this.state.menuOpen})
+  }
 
   render(){
+    const {menuOpen} = this.state
+    const iconStyles = menuOpen ? 'fas fa-times side-menu-icon' : 'fas fa-bars side-menu-icon'
   return (
-    <nav>
+    <nav className="main-nav">
 
       <div className="panel-one">
       <img src={logo} alt="logo" ref={re => this.logoRef = re}/>
@@ -27,9 +37,20 @@ export default class Navbar extends Component {
         </ul>
       </div>
 
+      <i className={iconStyles}
+      onClick={this.toggleMenu}/>
       
-      <img src={menuIcon} className="side-menu" alt="hamburger menu"/>
       
+      {menuOpen ? 
+      <nav className="side-menu">
+         <li>About</li>
+         <li>Contact</li>
+         <li>Dribble</li>
+         <li>LinkedIn</li>
+      </nav>
+      :
+      null
+      }
 
     </nav>
   )}
