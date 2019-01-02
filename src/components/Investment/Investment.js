@@ -22,6 +22,24 @@ export default function Investment() {
           </div>
         </div>
 
+        <div className="line" style={{marginBottom: '5%'}}/>
+
+        <div className="price-container">
+        <h1>investment</h1>
+        <h4>pricing information below.</h4>
+
+          <div className="price-list">
+            <div className="price">
+              <h4>$300</h4>
+            </div>
+
+            <div className="price">
+              <h4>$600</h4>
+            </div>
+          </div>
+
+        </div>
+
       </div>
     </React.Fragment>
   )
