@@ -5,6 +5,7 @@ div.invest-container {
     height: fit-content;
     background: $accent-grey;
     @include center-col;
+    @include fade-in;
     justify-content: flex-start;
     padding: 5%;
 

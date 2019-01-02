@@ -1,11 +1,14 @@
 import React from 'react'
 import NavBar from '../NavBar/NavBar'
+import './About.scss'
 
 export default function About() {
   return (
-    <div>
+    <React.Fragment>
       <NavBar/>
-      About
-    </div>
+      <section className="about-container">
+        <h1> About </h1>
+      </section>
+    </React.Fragment>
   )
 }

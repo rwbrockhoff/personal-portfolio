@@ -30,7 +30,7 @@ class Navbar extends Component {
 
       <div className="panel-two">
       <p> This will be information about the designer, where the designer lives, and what makes the designer unique to her discipline. </p>
-      <div className="line"/>
+      <div className="line" style={{animationDuration: isHomePage, animationDelay: isHomePage}}/>
       </div>
 
       <div className="panel-three">

@@ -1,11 +1,14 @@
 import React from 'react'
 import NavBar from '../NavBar/NavBar'
+import './Contact.scss'
 
 export default function Contact() {
   return (
-    <div>
+    <React.Fragment>
       <NavBar/>
-      Contact
-    </div>
+      <section className="contact-container">
+        <h1>Contact</h1>
+      </section>
+    </React.Fragment>
   )
 }

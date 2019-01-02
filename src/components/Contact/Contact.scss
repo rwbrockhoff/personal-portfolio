@@ -1,0 +1,10 @@
+@import '../../Main//variables';
+@import '../../Main/mixins';
+
+
+section.contact-container {
+    width: 100%;
+    height: 78vh;
+    @include center;
+    @include fade-in;
+}

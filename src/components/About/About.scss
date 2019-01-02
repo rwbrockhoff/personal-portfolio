@@ -1,0 +1,8 @@
+@import '../../Main//mixins';
+@import '../../Main/variables';
+
+section.about-container {
+    height: 78vh;
+    @include center;
+    @include fade-in;
+}
