@@ -4,7 +4,7 @@ import './Footer.scss'
 export default function Footer() {
   return (
     <footer>
-        © Interlake Studio. All rights reserved.
+        © SISU Design Studio. All rights reserved.
     </footer>
   )
 }

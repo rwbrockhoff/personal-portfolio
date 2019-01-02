@@ -11,7 +11,7 @@
 
 @mixin left-spread {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-direction: column;
 }
 
@@ -23,5 +23,12 @@
     @keyframes open {
         from { transform: scaleY(0); visibility: hidden; height: 0vh; opacity: 0; padding: 0vh 0vh;}
         to{ transform: scaleY(1); visibility: visible; height: 20vh; opacity: 1; padding: 1vh 0vh;}
+    }
+}
+
+@mixin line-open {
+    @keyframes line-open {
+        from { transform: scaleX(0);}
+        to { transform: scaleX(1); }
     }
 }

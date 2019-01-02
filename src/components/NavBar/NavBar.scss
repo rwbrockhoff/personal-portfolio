@@ -8,9 +8,10 @@ nav {
     //Pre-Animation: Not Visible
     @include open;
     animation: open 250ms $custom-ease;
-    animation-delay: 400ms;
+    animation-delay: 300ms;
     animation-fill-mode: forwards;
     display: grid;
+    width: 100%;
     grid-template-columns: 25% 50% 25%;
 
     .panel-one {
@@ -18,19 +19,14 @@ nav {
         @include center;
 
         img {
-            width: 80%;
+            width: 50%;
         }
     }
 
     .panel-two {
         grid-column: 2;
-        @include center;
+        @include center-col;
         padding: 0% 10%;
-
-        p {
-            padding-bottom: 15px;
-            border-bottom: 1px solid $accent-color;
-        }
     }
 
     .panel-three {
@@ -43,7 +39,19 @@ nav {
            height: 100%;
            @include left-spread;
            font-size: 0.8em;
-        }
+           margin: 5% 0%;
+           
+           li {
+            height: 20%;
+            display: flex;
+            align-items: center;
+            }
+
+            li:hover {
+                border-bottom: 1px solid $accent-color;
+            }
+    }
+           
     }
 }
 

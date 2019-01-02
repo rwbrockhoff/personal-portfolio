@@ -1,9 +1,24 @@
 @import '../../Main/variables';
 @import '../../Main/mixins';
 
-div.port-preview-container {
+div.port-row {
     height: 100vh;
-    background: linear-gradient($accent-color, $accent-color-dark);
-    color: white;
-    @include center;
+    background: white;
+    color: black;
+    
+    img {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+    }
+}
+
+div.split-container {
+    display: flex;
+}
+
+div.port-row-split {
+    @extend .port-row;
+    width: 50%;
+    
 }
