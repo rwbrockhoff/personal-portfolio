@@ -5,14 +5,26 @@ div.header-container {
     width: 100%;
     height: 78vh;
     @include center;
+    @include noise;
+    background-color: #A9B18F;
+    color: white;
     
     h1 {
         width: 80%;
         font-size: 9vw;
         font-family: 'Europa Bold';
         line-height: 110%;
-        color: black;
+        color: white;
         flex-wrap: wrap;
+        position: relative;
+        
+        opacity: 0;
+        @include text-open;
+        animation: text-open 200ms $custom-ease;
+        animation-delay: 500ms;
+        animation-fill-mode: forwards;
+
+
         @media all and (max-width: 575px) { 
             font-size: 12vw;
             line-height: 150%;

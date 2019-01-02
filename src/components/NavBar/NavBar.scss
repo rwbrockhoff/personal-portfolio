@@ -14,7 +14,7 @@ nav.main-nav {
     width: 100%;
     position: relative;
     grid-template-columns: 25% 50% 25%;
-
+    
     @media all and (max-width: 575px) { 
         grid-template-columns: 100%;
     }
@@ -97,9 +97,8 @@ nav.main-nav {
         overflow: hidden;
         z-index: 2;
         @include center-col;
-        font-size: 3em;
+        font-size: 2em;
         line-height: 150%;
-        
     }
 }
 
