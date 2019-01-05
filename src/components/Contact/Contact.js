@@ -5,9 +5,16 @@ import './Contact.scss'
 export default function Contact() {
   return (
     <React.Fragment>
-      <NavBar/>
+      <NavBar />
       <section className="contact-container">
-        <h1>Contact</h1>
+
+        <div className="contact-text">
+          <h3><span role="img" aria-label="hand waving emoji">🖐️</span> hi there</h3>
+        </div>
+
+        <form>
+          af
+        </form>
       </section>
     </React.Fragment>
   )

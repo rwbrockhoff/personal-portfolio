@@ -3,6 +3,7 @@
 
 .bubble-container {
     position: fixed;
+    z-index: 3;
     bottom: 20px;
     right: 20px;
     animation: hover 2s $custom-ease;

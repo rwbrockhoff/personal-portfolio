@@ -6,10 +6,13 @@ div.header-container {
     height: 78vh;
     @include center-col;
     @include noise;
+    background-image: url('../../assets/topo.png');
+    background-repeat: none;
+    background-blend-mode: color-burn;
     background-color: #A9B18F;
     color: white;
     position: relative;
-    
+
     h1 {
         width: 80%;
         font-size: 9vw;

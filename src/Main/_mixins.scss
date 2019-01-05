@@ -49,7 +49,7 @@
         from {opacity: 0;}
         to {opacity: 1;}
     }
-    animation: fade-in 150ms $custom-ease; 
+    animation: fade-in 300ms $custom-ease; 
 }
 
 @mixin noise {
