@@ -9,7 +9,13 @@ export default function Contact() {
       <section className="contact-container">
 
         <div className="contact-text">
-          <h3><span role="img" aria-label="hand waving emoji">🖐️</span> hi there</h3>
+          <div className="contact-h2-text">
+            <h2>Hello.</h2>
+            <h4>I'm excited that you're interested in working with me. Please fill out the contact form, and I'll be in touch within 1-2 business days.</h4>
+            <div className="hours-box">
+              mon-fri / 9am-5pm
+            </div>
+          </div>
         </div>
 
         <form>

@@ -7,7 +7,7 @@ section.contact-container {
     @include center;
     @include fade-in;
     background: $accent-color;
-
+    position: relative;
     form {
         width: 60%;
         height: 100%;
@@ -19,10 +19,36 @@ section.contact-container {
         height: 100%;
         position: relative;
         left: -40%;
+        @include center-col;
         background: $accent-grey;
         animation: slide-in 200ms $custom-ease;
         animation-delay: 200ms;
         animation-fill-mode: forwards;
+
+        .contact-h2-text {
+            height: 50%;
+            max-height: 50%;
+            padding: 0% 7%;
+            @include center-col;
+
+            .hours-box {
+                width: fit-content;
+                border: 2px solid black;
+                padding: 3%;
+                margin: 3% 0%;
+                font-size: 1.3em;
+                letter-spacing: 5px;
+                text-transform: uppercase;
+                white-space:nowrap;
+            }
+
+            h2 {
+                line-height: 150%;
+            }
+            h4 {
+                margin: 5% 0%;
+            }
+        }
     }
 }
 
