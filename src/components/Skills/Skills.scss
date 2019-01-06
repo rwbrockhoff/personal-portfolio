@@ -1,0 +1,25 @@
+@import '../../Main/mixins';
+@import '../../Main/variables';
+
+section.skills-section {
+    height: 30vh;
+    @include center;
+    justify-content: space-evenly;
+
+    .skill {
+        @include center-col;
+        justify-content: flex-start;
+        width: 4%;
+        p {
+            margin-top: 10px;
+        }
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .large-icon {
+        width: 6%;
+    }
+}

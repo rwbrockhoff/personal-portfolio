@@ -6,7 +6,7 @@ section.about-section {
     background: $accent-grey;
     height: fit-content;
     @include center-col;
-    padding: 5% 20%;
+    padding: 5% 25%;
 
     @media all and (max-width: 575px) { 
         padding: 10% 10%;

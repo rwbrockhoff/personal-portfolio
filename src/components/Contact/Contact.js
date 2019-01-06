@@ -26,25 +26,11 @@ export default function Contact() {
             placeholder="Name" />
 
           <input type="text"
-            placeholder="Location" />
-
-          <input type="text"
             placeholder="Email" />
 
-          <input type="text"
-            placeholder="Business Name + Website" />
+          <textarea placeholder="Message" />
 
-          <input type="text"
-            placeholder="How did you find us?" />
-
-          <input type="text"
-            placeholder="What services are you interested in?" />
-
-
-
-          <textarea placeholder="Tell me about your story, your business, and your goals." />
           <button>send</button>
-
 
         </form>
 
