@@ -39,6 +39,11 @@ h2 {
     font-size: 2em;
 }
 
+h3 {
+    @extend h1;
+    font-size: 1.4em;
+}
+
 h4 {
     font-size: 1.3em;
     line-height: 150%;
@@ -91,7 +96,7 @@ button:hover {
     width: fit-content;
     border: 2px solid black;
     padding: 2%;
-    margin: 3% 0%;
+    margin: 4% 0%;
     letter-spacing: 5px;
     text-transform: uppercase;
     white-space:nowrap;
