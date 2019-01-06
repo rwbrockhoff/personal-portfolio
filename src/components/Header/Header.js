@@ -4,7 +4,7 @@ import './Header.scss'
 export default function Header() {
   return (
     <div className="header-container">
-      <h1> designer &amp; visual storyteller based in utah.</h1>
+      <h1> &lt;web developer &amp; designer based in utah./&gt;</h1>
     </div>
   )
 }
