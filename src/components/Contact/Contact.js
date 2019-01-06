@@ -12,7 +12,7 @@ export default function Contact() {
         <div className="contact-text">
           <div className="contact-h2-text">
             <h2>Hello.</h2>
-            <h4>I'm excited that you're interested in working with me. Please fill out the contact form, and &nbsp; I'll be in touch within 1-2 business days.</h4>
+            <h4>I'm excited that you're interested in working with me. Please fill out the contact form, and I'll be in touch within 1-2 &nbsp; business days.</h4>
             <div className="hours-box">
               mon-fri / 9am-5pm
             </div>

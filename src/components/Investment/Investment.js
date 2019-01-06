@@ -27,7 +27,7 @@ export default function Investment() {
 
         <div className="price-container">
           <h1>investment</h1>
-          <h4>pricing information below.</h4>
+          <h4>pricing information below</h4>
 
           <div className="price-list">
             <div className="price">
