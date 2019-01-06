@@ -54,14 +54,15 @@ div.price-container {
 
         @media all and (max-width: 575px) { 
             grid-template-rows: 45% 45%;
-            grid-gap: 10%;
+            grid-gap: 5%;
             grid-template-columns: 100%;
         }
 
         .price {
-            height: 40vh;
+            height: fit-content;
+            padding: 2%;
             border: 2px solid #e2e2e2;
-            @include center;
+            @include center-col;
         }
     }
 }

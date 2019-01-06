@@ -86,3 +86,13 @@ button:hover {
     animation-delay: 500ms;
     animation-fill-mode: forwards;
 }
+
+.hours-box {
+    width: fit-content;
+    border: 2px solid black;
+    padding: 2%;
+    margin: 3% 0%;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    white-space:nowrap;
+}
