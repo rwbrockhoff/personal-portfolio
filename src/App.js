@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import NavBar from './components/NavBar/NavBar';
 import Header from './components/Header/Header';
-import PortfolioPreview from './components/PortfolioPreview/PortfolioPreview';
+import About from './components/About/About';
 import ContactBubble from './components/ContactBubble/ContactBubble'
 import Footer from './components/Footer/Footer'
 
@@ -11,7 +11,7 @@ class App extends Component {
       <div className="container">
         <NavBar />
         <Header />
-        <PortfolioPreview />
+        <About />
         <ContactBubble />
         <Footer />
       </div>

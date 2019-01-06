@@ -1,8 +1,30 @@
-@import '../../Main//mixins';
 @import '../../Main/variables';
+@import '../../Main/mixins';
 
-section.about-container {
-    height: 78vh;
-    @include center;
-    @include fade-in;
+
+section.about-section {
+    background: $accent-grey;
+    height: fit-content;
+    @include center-col;
+    padding: 5% 20%;
+
+    @media all and (max-width: 575px) { 
+        padding: 10% 10%;
+    }
+
+    .profile-picture {
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+        margin-bottom: 25px;
+    }
+
+    p {
+        font-size: 1.3em;
+        line-height: 200%;
+        text-align: center;
+        @media all and (max-width: 575px) { 
+            text-align: left;
+        }
+    }
 }

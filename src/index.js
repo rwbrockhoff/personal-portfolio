@@ -5,9 +5,7 @@ import './reset.css';
 import './Main/Main.scss';
 
 import App from './App';
-import About from './components/About/About'
 import Contact from './components/Contact/Contact'
-import Investment from './components/Investment/Investment'
 
 import * as serviceWorker from './serviceWorker';
 import { HashRouter as Router, Switch, Route } from 'react-router-dom';

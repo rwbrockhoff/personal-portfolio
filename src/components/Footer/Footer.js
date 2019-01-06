@@ -4,7 +4,7 @@ import './Footer.scss'
 export default function Footer() {
   return (
     <footer>
-        © SISU Design Studio. All rights reserved.
+      © Ryan Brockhoff. All rights reserved.
     </footer>
   )
 }

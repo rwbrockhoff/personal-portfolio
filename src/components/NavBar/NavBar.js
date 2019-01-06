@@ -35,8 +35,8 @@ class Navbar extends Component {
 
         <div className="panel-three">
           <ul>
-            <li>About</li>
-            {/* <Link to="/contact"> <li>Contact</li> </Link> */}
+
+            <Link to="/contact"> <li><i className="far fa-envelope" />Contact</li> </Link>
             <li><i className="fab fa-linkedin" />  LinkedIn</li>
 
             <li><i className="fab fa-github" />  Github</li>

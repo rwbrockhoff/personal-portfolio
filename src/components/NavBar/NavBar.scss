@@ -62,6 +62,9 @@ nav.main-nav {
             padding: 10% 0%;
             border-bottom: 1px solid white;
             transition: border-bottom 150ms $custom-ease;
+            i {
+                padding-right:5px;
+            }
             }
 
             li:hover {

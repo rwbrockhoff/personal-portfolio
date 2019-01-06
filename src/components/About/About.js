@@ -1,14 +1,14 @@
-import React from 'react'
-import NavBar from '../NavBar/NavBar'
+import React, { Component } from 'react'
 import './About.scss'
+import Profile from '../../assets/profile.png'
 
-export default function About() {
-  return (
-    <React.Fragment>
-      <NavBar/>
-      <section className="about-container">
-        <h1> About </h1>
+export default class About extends Component {
+  render() {
+    return (
+      <section className="about-section">
+        <img src={Profile} className="profile-picture" alt="profile picture" />
+        <p>I'm a web developer based in Utah with an emphasis on frontend and design. Previously, I was an elopement photographer + videographer with my fiance. When I wasn't standing on cliff edges in Yosemite or Moab, I was passionately coding and learning new things. Web development is the most fulfilling thing I've found in life, combining my love for problem solving and design. And just for fun, my greatest influences:</p>
       </section>
-    </React.Fragment>
-  )
+    )
+  }
 }
