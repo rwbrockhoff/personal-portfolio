@@ -3,7 +3,7 @@ import './Skills.scss'
 
 import HTML from '../../assets/icons/html.png'
 import CSS from '../../assets/icons/css.png'
-import SASS from '../../assets/icons/sass.svg'
+import SASS from '../../assets/icons/sass.png'
 import JS from '../../assets/icons/js.jpg'
 import R from '../../assets/icons/react.png'
 import Vue from '../../assets/icons/vue.png'

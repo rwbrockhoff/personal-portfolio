@@ -3,13 +3,31 @@
 
 section.skills-section {
     height: 30vh;
-    @include center;
+    
+    display: flex;
     justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
 
+    @media all and (max-width: 575px) { 
+        height: fit-content;
+    }
+    
     .skill {
-        @include center-col;
-        justify-content: flex-start;
         width: 4%;
+        min-width: 50px;
+        @include center-col;
+        
+        @media all and (max-width: 575px) { 
+            width: 50%;
+            min-width: 50%;
+            box-sizing: border-box;
+            margin: 10% 0%;
+            font-size: 1.2em;
+            img {
+                width: 50%;
+            }
+        }
         p {
             margin-top: 10px;
         }
@@ -21,5 +39,8 @@ section.skills-section {
 
     .large-icon {
         width: 6%;
+        @media all and (max-width: 575px) { 
+            width: 10%;
+        }
     }
 }

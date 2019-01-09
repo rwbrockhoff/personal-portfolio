@@ -37,11 +37,11 @@ class Navbar extends Component {
           <ul>
 
             <Link to="/contact"> <li><i className="far fa-envelope" />Contact</li> </Link>
-            <li><i className="fab fa-linkedin" />  LinkedIn</li>
+            <a href="https://linkedin.com/in/ryanbrockhoff"><li><i className="fab fa-linkedin" />  LinkedIn</li></a>
 
-            <li><i className="fab fa-github" />  Github</li>
+            <a href="https://github.com/rwbrockhoff"><li><i className="fab fa-github" />  Github</li></a>
 
-            <li><i className="fab fa-dribbble" />  Dribbble</li>
+            <a href="https://dribbble.com/rwbrockhoff"><li><i className="fab fa-dribbble" />  Dribbble</li></a>
           </ul>
         </div>
 

@@ -1,0 +1,30 @@
+@import '../../Main/mixins';
+@import '../../Main/variables';
+
+section.projects-section {
+    height: fit-content;
+    padding: 10% 0%;
+    background: $accent-grey;
+
+    .project-container {
+        height: 60vh;
+        display: flex;
+        align-items: center;
+        border: 2px solid green;
+        position: relative;
+
+        .laptop-view {
+            position: absolute;
+            right: 0%;
+            border: 2px solid green;
+            height: fit-content;
+            @include center;
+        }
+
+        .laptop-project-image {
+           position: absolute;
+           height: 60%;
+            
+        }
+    }
+}
