@@ -2,6 +2,7 @@ import React from 'react'
 import './Project.scss'
 
 export default function Project(props) {
+    let deviceStyle = props.mobile ? 'mobile' : 'laptop'
     return (
         <div className="project">
             <div className="tab">
@@ -20,7 +21,7 @@ export default function Project(props) {
             <div className="project-container">
                 <div className="laptop-view">
                     <img src={props.device} className="mac-image" alt="Mac Laptop" />
-                    <img src={props.image} className="laptop-project-image" />
+                    <img src={props.image} className={deviceStyle} alt="Animated project preview" />
                 </div>
             </div>
         </div>
