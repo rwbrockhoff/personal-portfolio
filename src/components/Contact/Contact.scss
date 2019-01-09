@@ -50,28 +50,36 @@ section.contact-container {
             
             @include center-col;
 
-            .hours-box {
-                width: fit-content;
-                border: 2px solid black;
-                padding: 3%;
-                margin: 3% 0%;
-                font-size: 1.3em;
-                letter-spacing: 5px;
-                text-transform: uppercase;
-                white-space:nowrap;
-            }
-
             h2 {
-                line-height: 150%;
+                line-height: 200%;
             }
             h4 {
                 margin: 5% 0%;
+                animation: expand-text 400ms $custom-ease;
+                animation-fill-mode: forwards;
             }
         }
     }
+
+    .inline-link {
+        border-bottom: 2px solid $accent-color;
+        transition: all 200ms $custom-ease;
+    }
+
+    .inline-link:hover {
+        background: $accent-color;
+        color: white;
+    }
 }
+
+
 
 @keyframes slide-in {
     from {left: -40%;}
     to {left: 0%;}
+}
+
+@keyframes expand-text {
+    from {line-height: 100%}
+    to {line-height: 200%}
 }

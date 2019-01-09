@@ -3,7 +3,6 @@ import './NavBar.scss'
 import { Link } from 'react-router-dom'
 import { withRouter } from 'react-router-dom';
 import logo from '../../assets/logo.png'
-import logoIcon from '../../assets/logo-icon.png'
 
 
 class Navbar extends Component {
@@ -51,11 +50,12 @@ class Navbar extends Component {
 
         {menuOpen ?
           <nav className="side-menu">
-            <Link to="/"><img src={logoIcon} alt="hamburger menu icon" className="sidebar-menu-icon" /></Link>
-            <Link to="/about"> <li>About</li> </Link>
-            <Link to="/contact"> <li>Contact</li> </Link>
-            <Link to="/investment"> <li>Investment</li> </Link>
-            <Link to="/dribbble"><li><i className="fab fa-dribbble" /> Dribbble</li> </Link>
+            <Link to="/contact"> <li><i className="far fa-envelope" />Contact</li> </Link>
+            <a href="https://linkedin.com/in/ryanbrockhoff"><li><i className="fab fa-linkedin" />  LinkedIn</li></a>
+
+            <a href="https://github.com/rwbrockhoff"><li><i className="fab fa-github" />  Github</li></a>
+
+            <a href="https://dribbble.com/rwbrockhoff"><li><i className="fab fa-dribbble" />  Dribbble</li></a>
           </nav>
           :
           null

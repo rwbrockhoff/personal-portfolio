@@ -11,11 +11,8 @@ export default function Contact() {
 
         <div className="contact-text">
           <div className="contact-h2-text">
-            <h2>Hello.</h2>
-            <h4>I'm excited that you're interested in working with me. Please fill out the contact form, and I'll be in touch within 1-2 &nbsp; business days.</h4>
-            <div className="hours-box">
-              mon-fri / 9am-5pm
-            </div>
+            <h2>Contact Me</h2>
+            <h4>You can fill out the form, <a className="inline-link" href="mailto:brockhoffrw@gmail.com">send me an email</a>, or reach out to me on <a className="inline-link" href="https://linkedin.com/in/ryanbrockhoff">LinkedIn</a> to get in touch with me. I look forward to hearing from you! </h4>
           </div>
         </div>
 

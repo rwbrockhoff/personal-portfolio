@@ -92,8 +92,10 @@ nav.main-nav {
     }
 
     .sidebar-menu-icon {
-        width: 80%;
-        margin: 10%;
+        width: 30%;
+        border: 2px solid white;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     nav.side-menu {
@@ -106,7 +108,7 @@ nav.main-nav {
         z-index: 2;
         @include center-col;
         font-size: 2em;
-        line-height: 150%;
+        line-height: 250%;  
     }
 }
 
