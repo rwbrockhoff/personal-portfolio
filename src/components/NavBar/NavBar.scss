@@ -17,23 +17,26 @@ nav.main-nav {
     grid-template-columns: 25% 50% 25%;
     
     @media all and (max-width: 575px) { 
-        grid-template-columns: 80% 20%;
+        grid-template-columns: 70% 30%;
     }
 
     .panel-one {
         grid-column: 1;
         display: grid;
         align-items: center;
-
+        
         img {
             width: 20%;  
             display: flex;
             margin-left: auto;
             margin-right: auto;
+
+            @media all and (max-width: 575px) { 
+                position: relative;
+                right: 20%;
+            }
         }
-        @media all and (max-width: 575px) { 
-            margin-right: 10%;
-        }
+        
     }
 
     .panel-two {
