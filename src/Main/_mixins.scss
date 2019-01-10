@@ -39,8 +39,12 @@
 
 @mixin text-open {
     @keyframes text-open {
-        from {opacity: 0; top: 100px;}
-        to {opacity: 1; top: 0px;}
+        from {opacity: 0; 
+            top: 100px; 
+            transform: translate3d(15deg);}
+        to {opacity: 1; 
+            top: 0px;
+            transform: translate3d(0deg);}
     }
 }
 

@@ -9,6 +9,9 @@ div.project {
     display: flex;
     align-items: center;
     margin: 40px 0px;
+    -webkit-box-shadow: 0px 10px 16px -11px rgba(0,0,0,0.2);
+-moz-box-shadow: 0px 10px 16px -11px rgba(0,0,0,0.2);
+box-shadow: 0px 10px 16px -11px rgba(0,0,0,0.2);
 
     .tab {
         width: 250px;
@@ -19,6 +22,25 @@ div.project {
         top: 0;
         left: 0;
         @include center;
+    }
+    .button-container {
+        position: absolute;
+        top: 0;
+        left: 250px;
+        width: 250px;
+        height: 75px;
+        padding-left: 25px;
+        @include center;
+        button {
+            width: 100px;
+            background: black;
+            color: white;
+            margin: 0px 10px;
+        }
+        button:hover {
+            background: #2d2d2d;
+            transition: background 100ms ease-in-out;
+        }
     }
     .text-container {
         width: 100%;

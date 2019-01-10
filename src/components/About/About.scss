@@ -7,6 +7,10 @@ section.about-section {
     height: fit-content;
     @include center-col;
     padding: 5% 25%;
+    opacity: 0;
+    animation: fadeIn 200ms $custom-ease;
+    animation-delay: 500ms;
+    animation-fill-mode: forwards;
 
     @media all and (max-width: 575px) { 
         padding: 10% 10%;
@@ -27,4 +31,9 @@ section.about-section {
             text-align: left;
         }
     }
+}
+
+@keyframes fadeIn {
+    from {opacity: 0}
+    to {opacity: 1}
 }

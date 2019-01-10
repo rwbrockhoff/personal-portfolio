@@ -5,5 +5,7 @@ section.projects-section {
     height: fit-content;
     padding: 3% 0%;
     background: $accent-grey;
+    background-image: url('../../assets/topo.png');
+    background-blend-mode: soft-light;
     @include center-col;
 }
