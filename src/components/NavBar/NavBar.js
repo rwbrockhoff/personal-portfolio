@@ -28,7 +28,7 @@ class Navbar extends Component {
         </div>
 
         <div className="panel-two">
-          <p> Hi, I'm Ryan. I'm a web developer and designer based in Utah. When I'm not coding, you'll find me hiking, reading, or telling puns. </p>
+          <p> Hi, I'm Ryan. I'm a web developer and designer. When I'm not coding, you'll find me hiking, reading, or telling puns.</p>
           <div className="line" style={{ animationDuration: isHomePage, animationDelay: isHomePage }} />
         </div>
 
@@ -36,11 +36,11 @@ class Navbar extends Component {
           <ul>
 
             <Link to="/contact"> <li><i className="far fa-envelope" />Contact</li> </Link>
-            <a href="https://linkedin.com/in/ryanbrockhoff"><li><i className="fab fa-linkedin" />  LinkedIn</li></a>
+            <a href="https://linkedin.com/in/ryanbrockhoff" target="_blank" rel="noopener noreferrer"><li><i className="fab fa-linkedin" />  LinkedIn</li></a>
 
-            <a href="https://github.com/rwbrockhoff"><li><i className="fab fa-github" />  Github</li></a>
+            <a href="https://github.com/rwbrockhoff" target="_blank" rel="noopener noreferrer"><li><i className="fab fa-github" />  Github</li></a>
 
-            <a href="https://dribbble.com/rwbrockhoff"><li><i className="fab fa-dribbble" />  Dribbble</li></a>
+            <a href="https://medium.com/@brockhoff" target="_blank" rel="noopener noreferrer"><li><i className="fab fa-medium-m" />  Medium</li></a>
           </ul>
         </div>
 
@@ -51,11 +51,11 @@ class Navbar extends Component {
         {menuOpen ?
           <nav className="side-menu">
             <Link to="/contact"> <li><i className="far fa-envelope" />Contact</li> </Link>
-            <a href="https://linkedin.com/in/ryanbrockhoff"><li><i className="fab fa-linkedin" />  LinkedIn</li></a>
+            <a href="https://linkedin.com/in/ryanbrockhoff" target="_blank" rel="noopener noreferrer"><li><i className="fab fa-linkedin" />  LinkedIn</li></a>
 
-            <a href="https://github.com/rwbrockhoff"><li><i className="fab fa-github" />  Github</li></a>
+            <a href="https://github.com/rwbrockhoff" target="_blank" rel="noopener noreferrer"><li><i className="fab fa-github" />  Github</li></a>
 
-            <a href="https://dribbble.com/rwbrockhoff"><li><i className="fab fa-dribbble" />  Dribbble</li></a>
+            <a href="https://medium.com/@brockhoff" target="_blank" rel="noopener noreferrer"><li><i className="fab fa-medium-m" />  Medium</li></a>
           </nav>
           :
           null

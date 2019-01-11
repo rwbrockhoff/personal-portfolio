@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import NavBar from '../NavBar/NavBar'
 import Footer from '../Footer/Footer'
 import axios from 'axios'
+import Swal from 'sweetalert2'
 import './Contact.scss'
 
 export default class Contact extends Component {
@@ -39,10 +40,10 @@ export default class Contact extends Component {
     else {
       const emailMessage = { name, email, message }
 
-      axios.post('/api/sendemail', { emailMessage }).then(res => {
-        console.log('res: ', res)
-        this.setState({ name: '', email: '', message: '' })
-        alert('Email sent! Thank you for reaching out to me.')
+      axios.post('/api/sendemail', { emailMessage }).then(() => {
+        this.setState({ name: '', email: '', message: '', valid: null }, () => {
+          Swal("Sent! 🚀", "I'll be in contact with you as soon as I can. Thank you for reaching out!", "success");
+        })
       })
     }
   }
@@ -62,7 +63,7 @@ export default class Contact extends Component {
             </div>
           </div>
 
-          <form>
+          <div className="form">
 
             <input
               type="text" autoFocus
@@ -84,7 +85,7 @@ export default class Contact extends Component {
             <button
               onClick={this.sendEmail}>send</button>
 
-          </form>
+          </div>
 
         </section>
         <Footer />
