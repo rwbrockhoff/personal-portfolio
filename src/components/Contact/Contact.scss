@@ -39,6 +39,8 @@ section.contact-container {
         left: -40%;
         @include center-col;
         background: $accent-grey;
+        background-image: url('../../assets/topo.png');
+        background-blend-mode: soft-light;
         animation: slide-in 200ms $custom-ease;
         animation-delay: 200ms;
         animation-fill-mode: forwards;

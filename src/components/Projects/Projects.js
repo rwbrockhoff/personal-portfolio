@@ -14,32 +14,37 @@ export default function Projects() {
     return (
         <section className="projects-section">
             <Project
-                image={dulyScreen}
+                image={lfScreen}
                 device={mac}
-                title="duly notes"
-                copy={dulyText} />
+                title="looking fox"
+                copy={lfText} />
+
             <Project
                 mobile={true}
                 image={orangesScreen}
                 device={iphone}
                 title="oranges"
                 copy={orangesText} />
+
             <Project
-                image={aktScreen}
+                image={dulyScreen}
                 device={mac}
-                title="akt"
-                copy={aktText} />
+                title="duly notes"
+                copy={dulyText} />
+
             <Project
                 mobile={true}
                 image={blokScreen}
                 device={iphone}
                 title="blok"
                 copy={blokText} />
+
             <Project
-                image={lfScreen}
+                image={aktScreen}
                 device={mac}
-                title="looking fox"
-                copy={lfText} />
+                title="akt"
+                copy={aktText} />
+
         </section>
     )
 }

@@ -8,12 +8,11 @@ div.header-container {
     @include noise;
     background-image: url('../../assets/topo.png');
     background-repeat: none;
-    background-size: 150%;
+    animation: moveMap 400ms infinite;
+    animation-iteration-count: 1;
     background-blend-mode: color-burn;
     background-color:#A9B18F;
     color: white;
-    animation: fadeHeader 200ms $custom-ease;
-    animation-fill-mode: forwards;
     position: relative;
 
     h1 {
@@ -40,10 +39,6 @@ div.header-container {
     }
 }
 
-@keyframes fadeHeader {
-    from {background-size: 110%;}
-    to {background-size: 100%;}
-}
 
 
 
