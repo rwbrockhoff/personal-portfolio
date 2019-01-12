@@ -3,6 +3,8 @@
 
 section.projects-section {
     height: fit-content;
+    max-width: 100%;
+    overflow-x: hidden;
     padding: 3% 0%;
     background: $accent-grey;
     background-image: url('../../assets/topo.png');

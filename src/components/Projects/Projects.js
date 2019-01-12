@@ -2,7 +2,7 @@ import React from 'react'
 import './Projects.scss'
 import Project from './Project'
 import { dulyText, aktText, lfText, orangesText, blokText } from './copyText'
-import dulyScreen from '../../assets/project-graphics/duly_screen.gif'
+import dulyScreen from "../../assets/project-graphics/duly_screen.gif"
 import aktScreen from '../../assets/project-graphics/akt.gif'
 import blokScreen from '../../assets/project-graphics/blok.gif'
 import mac from '../../assets/project-graphics/mac.png'

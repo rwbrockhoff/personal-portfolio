@@ -26,6 +26,10 @@
 
 body {
     font-family: 'Europa', sans-serif;
+    @media all and (max-width: 575px) { 
+        overflow-x: hidden;
+        max-width: 100%;
+    }
 }
 
 li {
