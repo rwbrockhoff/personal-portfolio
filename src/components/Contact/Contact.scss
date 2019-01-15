@@ -12,7 +12,7 @@ section.contact-container {
     position: relative;
     @media all and (max-width: 575px) { 
         flex-direction: column;
-        height: 100vh;
+        height: fit-content;
     }
     .form {
         width: 50%;
@@ -82,6 +82,8 @@ section.contact-container {
         }
         @media all and (max-width: 575px) { 
             width: 100%;
+            height: fit-content;
+            padding: 20px 0px;
         }
     }
 
