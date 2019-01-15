@@ -10,6 +10,10 @@ section.contact-container {
     @include fade-in;
     background: $accent-color;
     position: relative;
+    @media all and (max-width: 575px) { 
+        flex-direction: column;
+        height: 100vh;
+    }
     .form {
         width: 50%;
         height: 100%;
@@ -21,17 +25,30 @@ section.contact-container {
             input {
                 width: 70%;
                 margin: 10px 0px;
+                @media all and (max-width: 575px) { 
+                    width: 85%;
+                }
             }
         
             textarea {
                 width: 70%;
                 height: 30vh;
                 resize: none;
+                @media all and (max-width: 575px) { 
+                    width: 85%;
+                }
             }
 
             button {
                 width: 72%;
+                @media all and (max-width: 575px) { 
+                    width: 85%;
+                }
             }  
+            @media all and (max-width: 575px) { 
+                width: 100%;
+                padding: 20px 0px;
+            }
     }
 
     .contact-text {
@@ -62,6 +79,9 @@ section.contact-container {
                 animation: expand-text 400ms $custom-ease;
                 animation-fill-mode: forwards;
             }
+        }
+        @media all and (max-width: 575px) { 
+            width: 100%;
         }
     }
 
