@@ -4,7 +4,7 @@
 //TODO: Still need media queries for mobile. 
 
 div.project {
-    height: 45vh;
+    min-height: 45vh;
     width: 80%;
     background: white;
     position: relative;
@@ -12,8 +12,11 @@ div.project {
     align-items: center;
     margin: 40px 0px;
     -webkit-box-shadow: 0px 10px 16px -11px rgba(0,0,0,0.2);
--moz-box-shadow: 0px 10px 16px -11px rgba(0,0,0,0.2);
-box-shadow: 0px 10px 16px -11px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 10px 16px -11px rgba(0,0,0,0.2);
+    box-shadow: 0px 10px 16px -11px rgba(0,0,0,0.2);
+    @media all and (max-width: 575px) { 
+        flex-direction: column;
+    }
 
     .tab {
         width: 250px;
@@ -24,6 +27,11 @@ box-shadow: 0px 10px 16px -11px rgba(0,0,0,0.2);
         top: 0;
         left: 0;
         @include center;
+        @media all and (max-width: 575px) { 
+            width: 100%;
+            height: 100px;
+            border-bottom-right-radius: 0px;
+        }
     }
     .button-container {
         position: absolute;
@@ -33,6 +41,7 @@ box-shadow: 0px 10px 16px -11px rgba(0,0,0,0.2);
         height: 75px;
         padding-left: 25px;
         @include center;
+        
         button {
             width: 100px;
             padding: 5px 0px;
@@ -44,6 +53,13 @@ box-shadow: 0px 10px 16px -11px rgba(0,0,0,0.2);
             background: #2d2d2d;
             transition: background 100ms ease-in-out;
         }
+        @media all and (max-width: 575px) { 
+            position: relative;
+            top: 60px;
+            left: 0px;
+            width: 100%;
+            padding-left: 0;
+        }
     }
 
     .text-container {
@@ -51,7 +67,8 @@ box-shadow: 0px 10px 16px -11px rgba(0,0,0,0.2);
         display: flex;
         flex-direction: column;
         margin-left: 50px;
-        margin-top: 75px;
+        margin-top: 100px;
+        margin-bottom: 25px;
 
         p {
             font-size: 1.2em;
@@ -64,6 +81,11 @@ box-shadow: 0px 10px 16px -11px rgba(0,0,0,0.2);
             line-height: 150%;
             font-size: 1.1em;
             margin-left: 20px;
+        }
+        @media all and (max-width: 575px) { 
+            width: 90%;
+            margin: 5% 0%;  
+            margin-top: 75px;      
         }
     }
     .laptop-view {
