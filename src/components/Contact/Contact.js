@@ -59,7 +59,7 @@ export default class Contact extends Component {
           <div className="contact-text">
             <div className="contact-h2-text">
               <h2>Contact Me</h2>
-              <h4>You can fill out the form, <a className="inline-link" href="mailto:brockhoffrw@gmail.com">send me an email</a>, or reach out to me on <a className="inline-link" href="https://linkedin.com/in/ryanbrockhoff">LinkedIn</a> to get in touch with me. I look forward to hearing from you! </h4>
+              <h4>You can fill out the form, <a className="inline-link" href="mailto:brockhoffrw@gmail.com">send me an email</a>, or reach out to me on <a className="inline-link" href="https://linkedin.com/in/ryanbrockhoff" target="_blank">LinkedIn</a> to get in touch with me. I look forward to hearing from you! </h4>
             </div>
           </div>
 
