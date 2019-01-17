@@ -12,6 +12,12 @@ section.skills-section {
     @media all and (max-width: 575px) { 
         height: fit-content;
     }
+
+    @media all and (min-device-width : 768px) 
+        and (max-device-width : 1024px) {
+        height: fit-content;
+        padding: 5% 0%;
+    }
     
     .skill {
         width: 50px;
@@ -52,6 +58,11 @@ section.skills-section {
         img {
             position: relative;
             top: 10px;
+        }
+        @media all and (min-device-width : 768px) 
+        and (max-device-width : 1024px) {
+            position: relative;
+            top: -10px;
         }
     }
 }

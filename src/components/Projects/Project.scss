@@ -18,6 +18,11 @@ div.project {
         flex-direction: column;
     }
 
+    @media all and (min-device-width : 768px) 
+        and (max-device-width : 1024px) {
+        flex-direction: column;
+    }
+
     .tab {
         width: 250px;
         height: 75px;

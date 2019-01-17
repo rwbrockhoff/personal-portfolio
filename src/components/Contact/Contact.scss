@@ -14,6 +14,11 @@ section.contact-container {
         flex-direction: column;
         height: fit-content;
     }
+    @media all and (min-device-width : 768px) 
+    and (max-device-width : 1024px) {
+    flex-direction: column;
+    height: fit-content;
+    }
     .form {
         width: 50%;
         height: 100%;
@@ -49,6 +54,11 @@ section.contact-container {
                 width: 100%;
                 padding: 20px 0px;
             }
+            @media all and (min-device-width : 768px) 
+            and (max-device-width : 1024px) {
+            width: 100%;
+            padding: 20px 0px;
+        }
     }
 
     .contact-text {
@@ -81,6 +91,12 @@ section.contact-container {
             }
         }
         @media all and (max-width: 575px) { 
+            width: 100%;
+            height: fit-content;
+            padding: 20px 0px;
+        }
+        @media all and (min-device-width : 768px) 
+        and (max-device-width : 1024px) {
             width: 100%;
             height: fit-content;
             padding: 20px 0px;
