@@ -31,6 +31,15 @@ section.about-section {
             text-align: left;
         }
     }
+    p.from-scratch {
+        margin-top: 15px;
+        &:hover {
+            color: #626262;
+            div.hidden-line {
+                opacity: 1;
+            }
+        }
+    }
 }
 
 @keyframes fadeIn {

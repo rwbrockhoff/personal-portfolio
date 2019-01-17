@@ -109,6 +109,11 @@ button:hover {
     animation-fill-mode: forwards;
 }
 
+.hidden-line {
+    @extend .line;
+    opacity: 0;
+}
+
 .hours-box {
     width: fit-content;
     border: 2px solid black;

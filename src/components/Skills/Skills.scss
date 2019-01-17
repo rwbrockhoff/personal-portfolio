@@ -40,9 +40,18 @@ section.skills-section {
     }
 
     .large-icon {
-        width: 60px;
+        width: 50px;
         @media all and (max-width: 575px) { 
             width: 10%;
+        }
+    }
+
+    .larger-icon {
+        @extend .large-icon;
+        width: 70px;
+        img {
+            position: relative;
+            top: 10px;
         }
     }
 }
