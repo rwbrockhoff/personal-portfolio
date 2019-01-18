@@ -9,7 +9,7 @@ export const dulyText = {
 
 export const orangesText = {
     copy: 'A full-stack, responsive game based on Apples to Apples. Built mobile-first in React, using socket.io as the bulk of the technology to communicate game information.',
-    bullets: ["Utilizes socket.io for web-socket communication", "Focus on animation and game-like immersion", "Emphasis on responsive design"],
+    bullets: ["Responsible for the majority of frontend implementation", "Developed prototypes to improve user-flow using Adobe XD", "Debugged and pair-programmed with team through various challenges"],
     live: "https://oranges2oranges2.firebaseapp.com/#/",
     github: "https://rwbrockhoff.github.io/oranges/"
 }
