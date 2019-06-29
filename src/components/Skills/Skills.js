@@ -7,7 +7,7 @@ import SASS from "../../assets/icons/sass.png";
 import JS from "../../assets/icons/js.jpg";
 import R from "../../assets/icons/react.png";
 import TS from "../../assets/icons/typescript.png";
-import Node from "../../assets/icons/node.png";
+import Node from "../../assets/icons/node.svg";
 import SQL from "../../assets/icons/postgres.png";
 import Jest from "../../assets/icons/jest.png";
 import Sketch from "../../assets/icons/sketch.png";
@@ -20,7 +20,7 @@ export default function Skills() {
         <img src={R} alt="React Icon" />
         <p>React</p>
       </div>
-      <div className="skill larger-icon">
+      <div className="skill">
         <img src={Node} alt="Node Icon" />
         <p>Node</p>
       </div>
