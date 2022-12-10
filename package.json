@@ -17,7 +17,7 @@
     "@sendgrid/mail": "^6.3.1",
     "body-parser": "^1.18.3",
     "dotenv": "^6.2.0",
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "http-proxy-middleware": "^0.19.1",
     "sendgrid": "^5.2.3"
   },
