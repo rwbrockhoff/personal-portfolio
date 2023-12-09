@@ -13,7 +13,7 @@ export default class About extends Component {
           develop across a full stack and create various designs and prototypes.
           I'm constantly challenging myself to improve as a developer and a
           designer. I'm at my happiest when I can work closely with logic and
-          design on a daily basis. Currently open to freelance opportunities.
+          design on a daily basis. Currently open to full-time opportunities.
         </p>
         <a
           href="https://github.com/rwbrockhoff/personal-portfolio"
